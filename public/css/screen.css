@@ -1,0 +1,251 @@
+/* @override http://strata.zgtech.net/css/screen.css */
+
+/* header */
+body {
+    font-family:'lucida grande',tahoma,arial,sans-serif;
+    background-color: #DFE8F6;
+}
+#header {
+    background: #fff;
+    height:92px;
+    padding-top:5px;
+    position: relative;
+}
+#header h1 {
+    margin-left: 20px;
+    float: left;
+}
+#header h2 {
+    float: right;
+    margin-right: 20px;
+}
+#header h3 {
+    float: right;
+    text-align: right;
+    color:#000;
+    font-size:16px;
+    font-weight:normal;
+    padding:10px 20px 10px 10px;
+}
+
+#header h3 a {
+    color: #395b98;
+}
+
+/*.x-grouptabpanel-default .x-disabled-group {
+    display: none;
+}*/
+
+.x-grouptabs-panel .x-grouptabs-strip-active .x-grouptabs-strip-active .x-grouptabs-text {
+   background-color: #ddd;
+}
+
+.x-grouptabpanel {
+    background-color: #4E78B1;
+}
+.x-tree-panel .x-grid-row .x-grid-cell {
+    background: none;
+}
+/*.x-grouptabbar .x-active-tab .x-grid-cell-inner {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}*/
+
+.definition-list dl dt {
+    width: 20%;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #15428b;
+    text-indent: 20px;
+}
+
+.definition-list dl dd {
+    width: 80%;
+    float: right;
+    height: auto;
+    line-height: 25px;
+}
+
+.menu-title{
+    background: #D6E3F2;
+    border-style: solid;
+    border-color:#DAE6F4 #99bbe8 #99bbe8 #DAE6F4;
+    border-width: 1px;
+    margin:-2px -2px 0;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}
+.export-link {
+    padding-bottom: 15px;
+    display: block;
+}
+
+/*.x-panel-body-default {
+background-color:transparent !important;
+border:0px !important;
+font-size:11px !important;
+}*/
+/*
+#id-rig-grid-own .x-grid-row-selected .x-grid-cell, #id-rig-grid-own .x-grid-row-selected .x-grid-rowwrap-div {
+
+#id-rig-grid-own .x-grid-row-selected .x-grid-td {
+    background:transparent !important;
+}
+*/
+#id-rig-grid-own .x-grid-row-selected .x-grid-cell-special {
+    background-image: none;
+}
+#id-rig-grid-own .x-grid-cell-special {
+    background-image: none;
+}
+#id-rig-grid-own .x-grid-td {
+    background-color: transparent;
+}
+#id-rig-grid-own .x-grid-row-selected .x-grid-td {
+    background-color: transparent;
+}
+.status-unknown TD {
+    background-color:white !important;
+}
+.status-unknown + TR{
+    background-color:white !important;
+} 
+.status-normal TD{
+    background-color:#D2F2A7 !important;
+}
+.status-normal + TR{
+    background-color:white !important;
+}
+.status-warning TD {
+    background-color:#EFF582 !important;
+}
+.status-warning + TR{
+    background-color:white !important;
+}
+.status-alert TD {
+    background-color:#F55847 !important;
+}
+.status-alert + TR{
+    background-color:white !important;
+}
+.sensor-status-unknown DIV {
+    background-color:white !important;
+}
+.sensor-status-normal DIV {
+     background-color:#D2F2A7 !important;
+}
+.sensor-status-warning DIV {
+        background-color:#EFF582 !important;
+}
+.sensor-status-alert DIV {
+        background-color:#F55847 !important;
+}
+.x-grid-view {
+         overflow-y:auto !important;
+}
+
+.x-grid-row .x-grid-checkheader {
+    background:url(../images/icons/uncheck.png) center center no-repeat !important;
+}
+.x-grid-row .x-grid-checkheader-checked {
+    background:url(../images/icons/check.png) center center no-repeat !important;
+}
+.x-grid-row .x-grid-dirty-cell {
+    background-image:none;
+}
+
+.x-grid-body .no-data-grid{text-align: center; margin: 50px 0 0 0;}
+
+.x-grid-table .x-grid-row.red td div,
+.x-grid-table .x-grid-row.red td {
+    background-color:#ffbfbf !important;
+}
+
+#id-commtrac-map {
+    width   : 100%;
+}
+.hidden {
+    display:none !important;
+}
+.assign-type-button {
+    border:none;
+    background:none;
+}
+.assign-type-cell > div {
+    padding: 0;
+}
+.combo-color-display {
+    line-height: 35px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.combo-color-display img {
+    float: left;
+    margin-right: 10px;
+}
+.combo-image-preview {
+    float:left;
+    margin-right:5px;
+}
+
+.commtrac-combo-color input {
+    float:right;
+    width:96px !important;
+}
+
+.commtrac-combo-color label,
+.commtrac-combo-color input,
+.commtrac-combo-color .x-form-trigger-wrap {
+    margin-top:6px;
+}
+.commtrac-combo-color .x-trigger-cell.x-unselectable {
+    background-color: #DFE9F6;
+    padding-top: 6px;
+}
+.red {
+    color:#f00 !important;
+}
+.green {
+    color:#0f0 !important;
+}
+.blue {
+    color:#00f !important;
+}
+
+/*
+chat styles
+*/
+.msgLocalUser {
+    color: #ff0000;
+    font-weight: bold;
+}
+.msgRemoteUser {
+    color: #0000ff;
+    font-weight: bold;
+}
+.msgTime {
+    font-weight: normal;
+}
+.export-field {
+     background-color:#DFE9F6;
+}
+.export-field > div {
+     background-color:#DFE9F6;
+}
+#header h1, #header h3 {
+    margin-top:0;
+}
+#id-commtrac-openlayers-commtrac-innerCt.olMap {
+    width:99% !important;
+    height:99% !important;
+    min-width:1px;
+    min-height:1px;
+}
+
+.alarm-row, .tag-row, .gateway-master {font-weight: bold; color:#EE0000;}
+.gateway-slave {font-weight: bold; color:#009900;}

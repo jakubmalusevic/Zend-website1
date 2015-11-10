@@ -1,0 +1,23 @@
+/******** Common Style *********/
+html, body { margin:0; padding: 0; }
+a {
+    outline: none;
+}
+a:hover {
+    opacity: 0.8;
+}
+.wrapper {
+    padding: 30px;
+}
+.logo {
+    width: 315px;
+    margin: 0 auto;
+}
+.main {
+    width: 600px;
+    margin: 30px auto;
+}
+.main form {
+    width: 90%;
+    margin: 0 auto;
+}

@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <div class="logo">
+        <img src="<?php echo $this->baseUrl();?>/../images/logo.png" />
+    </div>
+    <div class="main">
+        <div class="error"><?=$this->msg?></div>
+        <p>Thank you for your interest in becoming a vendor. Please fill out your information below to get started</p>
+        <form action="" method="post">
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" value="<?=$this->firstname?>"/>
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="last_name" name="last_name" value="<?=$this->lastname?>" />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" value="<?=$this->email?>" />
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</div>

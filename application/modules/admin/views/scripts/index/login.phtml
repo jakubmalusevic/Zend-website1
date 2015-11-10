@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+    
+    <?php echo $this->headTitle() ?> 
+    <?php echo $this->headMeta() ?>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+
+    <meta name="keywords" content="glam me" />    
+    <meta name="description" content="glam me" />
+    <meta name="robots" content="noindex, nofollow" />
+   
+    <?php 
+        $this->headLink()
+            ->prependStylesheet($this->baseUrl().'/../js/ext-4.2.1/resources/css/ext-all.css')
+            ->prependStylesheet($this->baseUrl().'/../css/style-min.css');
+
+        $this->headScript()
+            ->prependFile($this->baseUrl().'/../js/app/login.js')
+            ->prependFile($this->baseUrl().'/../js/ext-4.2.1/ext-all-debug.js')
+            ->prependFile($this->baseUrl().'/../js/jquery.js');
+
+        echo $this->headLink();
+        echo $this->headScript();                               
+    ?>
+
+    <script type="text/javascript">
+        var baseUrl = '<?= json_encode($this->baseUrl()); ?>';
+    </script>
+</head>
+
+<body>
+        
+</body>
+</html>

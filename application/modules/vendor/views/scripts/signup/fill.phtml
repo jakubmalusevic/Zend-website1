@@ -1,0 +1,67 @@
+<div class="wrapper">
+    <div class="logo">
+        <img src="<?php echo $this->baseUrl();?>/../images/logo.png" />
+    </div>
+    <div class="main">
+        <p>Please fill out your information below to get started</p>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="vid" value="<?=$this->vendor->id?>" />
+            <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" value="<?=$this->vendor->last_name?>" />
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" value="<?=$this->vendor->mobile?>"/>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" value="<?=$this->vendor->email?>"/>
+            </div>
+            <div>
+                <label for="addr">Business Address</label>
+                <input type="text" id="addr" name="addr" value="<?=$this->vendor->address?>"/>
+            </div>
+            <div>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" value="<?=$this->vendor->city?>"/>
+            </div>
+            <div>
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" value="<?=$this->vendor->state?>"/>
+            </div>
+            <div>
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" value="<?=$this->vendor->zip?>"/>
+            </div>
+            <div>
+                <label for="max_miles" >Miles - Distance Willing to Drive</label>
+                <select id="max_miles" name="max_miles">
+                    <?php for ( $m = 5; $m <=100; $m+=5 ): ?>
+                    <option value="<?=$m?>" <?php if($this->vendor->max_miles == $m) echo 'selected'; ?>><?=$m?> Miles</option>
+                    <?php endfor; ?>
+                </select>
+            </div>
+            <div>
+                <label for="areas_expertise">Areas of Expertise</label>
+                <textarea id="areas_expertise" name="areas_expertise" cols="20" rows="5"><?=$this->vendor->areas_expertise?></textarea>
+            </div>
+            <div>
+                <p>Please Upload the Following Documents:</p>
+                <label for="drivers_license">Drivers License</label>
+                <input type="file" name="drivers_license" />
+            </div>
+            <div>
+                <label for="resume">Resume</label>
+                <input type="file" name="resume" />
+            </div>
+            <div>
+                <label for="cosmetology_license">Cosmetology License</label>
+                <input type="file" name="cosmetology_license" />
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</div>

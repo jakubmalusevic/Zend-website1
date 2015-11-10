@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <div class="logo">
+        <img src="<?php echo $this->baseUrl();?>/../images/logo.png" />
+    </div>
+    <div class="main">
+        <h3>Congratulations! You Have Been Approved!</h3>
+        <p>Please take a moment to fill out the following steps to be set up in our system.</p>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="vid" value="<?=$this->vendor->id?>" />
+            <div>
+                <h4>Step 1: Watch this Video</h4>
+            </div>
+            <div>
+                <h4>Step 2: Take this Quiz</h4>
+            </div>
+            <div>
+                <h4>Step 3: Essay Submission</h4>
+                <input type="file" id="submission" name="submission" />
+                <label>Comments:</label>
+                <textarea id="comments" name="comments" cols="20" rows="5"></textarea>
+            </div>
+            <div>
+                <p>Thank you! A contract will be sent upon approval.</p>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</div>
